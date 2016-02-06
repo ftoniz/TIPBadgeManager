@@ -28,6 +28,12 @@ public class TIPBadgeManager {
         tipBadgeObjDict[name] = badgeObj!
     }
     
+    public func setBadgeInset(name:String,inset:CGPoint){
+        if let badgeObj = tipBadgeObjDict[name] as? TIPViewObject {
+            badgeObj.badgeInset = inset
+        }
+    }
+    
     public func setBadgeValue(key : String, value : Int){
         tipBadgeObjDict[key]?.badgeValue = value
     }
