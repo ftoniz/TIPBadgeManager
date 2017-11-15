@@ -52,10 +52,10 @@ open class TIPBadgeView: UIView {
         bottomLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.label!, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: 0)
         
         leftLabelConstraint = NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.left, multiplier: 1.0, constant: 2.0)
-        leftLabelConstraint!.priority = 1000.0
+        leftLabelConstraint!.priority = UILayoutPriority(rawValue: 1000.0)
         
         rightLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.label, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 2.0)
-        rightLabelConstraint!.priority = 1000.0
+        rightLabelConstraint!.priority = UILayoutPriority(rawValue: 1000.0)
         
         self.addConstraints([topLabelConstraint!, bottomLabelConstraint!, leftLabelConstraint!, rightLabelConstraint!])
     }
