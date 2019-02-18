@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50B0366CF861FFBB3411976D /* Pods_TIPBadgeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0659ACD3BD530C23C9B9482 /* Pods_TIPBadgeManager.framework */; };
+		DDCDA3A4C8E9E7D71D6D1E97 /* Pods_TIPBadgeManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA8FB7FE0373410318C1AF5 /* Pods_TIPBadgeManagerTests.framework */; };
 		FD1F57ED1B31C71C00D87939 /* TIPBadgeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FD1F57EC1B31C71C00D87939 /* TIPBadgeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD1F57F31B31C71C00D87939 /* TIPBadgeManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1F57E71B31C71C00D87939 /* TIPBadgeManager.framework */; };
 		FD1F57FA1B31C71C00D87939 /* TIPBadgeManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1F57F91B31C71C00D87939 /* TIPBadgeManagerTests.swift */; };
@@ -29,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10E97528C53B27722C97B5A6 /* Pods-TIPBadgeManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIPBadgeManager.debug.xcconfig"; path = "Target Support Files/Pods-TIPBadgeManager/Pods-TIPBadgeManager.debug.xcconfig"; sourceTree = "<group>"; };
+		6CA8FB7FE0373410318C1AF5 /* Pods_TIPBadgeManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIPBadgeManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D84C18489BA4A2E07EF98E2 /* Pods-TIPBadgeManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIPBadgeManager.release.xcconfig"; path = "Target Support Files/Pods-TIPBadgeManager/Pods-TIPBadgeManager.release.xcconfig"; sourceTree = "<group>"; };
+		B0659ACD3BD530C23C9B9482 /* Pods_TIPBadgeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TIPBadgeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1163656DCC862EE4BA42C2 /* Pods-TIPBadgeManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIPBadgeManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-TIPBadgeManagerTests/Pods-TIPBadgeManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5C30DB8F225C9F636675FA /* Pods-TIPBadgeManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TIPBadgeManagerTests.release.xcconfig"; path = "Target Support Files/Pods-TIPBadgeManagerTests/Pods-TIPBadgeManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD1F57E71B31C71C00D87939 /* TIPBadgeManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TIPBadgeManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD1F57EB1B31C71C00D87939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD1F57EC1B31C71C00D87939 /* TIPBadgeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TIPBadgeManager.h; sourceTree = "<group>"; };
@@ -48,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B0366CF861FFBB3411976D /* Pods_TIPBadgeManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +65,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1F57F31B31C71C00D87939 /* TIPBadgeManager.framework in Frameworks */,
+				DDCDA3A4C8E9E7D71D6D1E97 /* Pods_TIPBadgeManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		586EB0E627E06C16E0523D1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0659ACD3BD530C23C9B9482 /* Pods_TIPBadgeManager.framework */,
+				6CA8FB7FE0373410318C1AF5 /* Pods_TIPBadgeManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0A1EFF4876C4ABBF6066087 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10E97528C53B27722C97B5A6 /* Pods-TIPBadgeManager.debug.xcconfig */,
+				9D84C18489BA4A2E07EF98E2 /* Pods-TIPBadgeManager.release.xcconfig */,
+				BD1163656DCC862EE4BA42C2 /* Pods-TIPBadgeManagerTests.debug.xcconfig */,
+				EE5C30DB8F225C9F636675FA /* Pods-TIPBadgeManagerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FD1F57DD1B31C71C00D87939 = {
 			isa = PBXGroup;
 			children = (
 				FD1F57E91B31C71C00D87939 /* Source */,
 				FD1F57F61B31C71C00D87939 /* Tests */,
 				FD1F57E81B31C71C00D87939 /* Products */,
+				D0A1EFF4876C4ABBF6066087 /* Pods */,
+				586EB0E627E06C16E0523D1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +170,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD1F57FD1B31C71C00D87939 /* Build configuration list for PBXNativeTarget "TIPBadgeManager" */;
 			buildPhases = (
+				2CBBA49E837A861A38F7E319 /* [CP] Check Pods Manifest.lock */,
 				FD1F57E21B31C71C00D87939 /* Sources */,
 				FD1F57E31B31C71C00D87939 /* Frameworks */,
 				FD1F57E41B31C71C00D87939 /* Headers */,
@@ -156,6 +189,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD1F58001B31C71C00D87939 /* Build configuration list for PBXNativeTarget "TIPBadgeManagerTests" */;
 			buildPhases = (
+				0235A1916EF54EC7B4BAC91C /* [CP] Check Pods Manifest.lock */,
 				FD1F57EE1B31C71C00D87939 /* Sources */,
 				FD1F57EF1B31C71C00D87939 /* Frameworks */,
 				FD1F57F01B31C71C00D87939 /* Resources */,
@@ -225,6 +259,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0235A1916EF54EC7B4BAC91C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIPBadgeManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CBBA49E837A861A38F7E319 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TIPBadgeManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD1F57E21B31C71C00D87939 /* Sources */ = {
@@ -351,6 +432,7 @@
 		};
 		FD1F57FE1B31C71C00D87939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E97528C53B27722C97B5A6 /* Pods-TIPBadgeManager.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -364,12 +446,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		FD1F57FF1B31C71C00D87939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D84C18489BA4A2E07EF98E2 /* Pods-TIPBadgeManager.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -383,12 +466,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
 		FD1F58011B31C71C00D87939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1163656DCC862EE4BA42C2 /* Pods-TIPBadgeManagerTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -409,6 +493,7 @@
 		};
 		FD1F58021B31C71C00D87939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5C30DB8F225C9F636675FA /* Pods-TIPBadgeManagerTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

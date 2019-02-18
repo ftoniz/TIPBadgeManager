@@ -47,13 +47,13 @@ open class TIPViewObject: NSObject, TIPBadgeObject{
         
        bv!.translatesAutoresizingMaskIntoConstraints = false
         
-        let badgeHeightConstraint = NSLayoutConstraint(item: bv!, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.height, multiplier: 1.0, constant: 18.0)
+        let badgeHeightConstraint = NSLayoutConstraint(item: bv!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 18.0)
         
         bv!.addConstraints([badgeHeightConstraint])
         
-        let rightConstraint = NSLayoutConstraint(item: self.view!, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: bv!, attribute: NSLayoutAttribute.left, multiplier: 1.0, constant: 7.0 + badgeInset.x)
+        let rightConstraint = NSLayoutConstraint(item: self.view!, attribute: .right, relatedBy: .equal, toItem: bv!, attribute: .left, multiplier: 1.0, constant: 7.0 + badgeInset.x)
         
-        let topConstraint = NSLayoutConstraint(item: self.view!, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: bv!, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 5.0 + badgeInset.y )
+        let topConstraint = NSLayoutConstraint(item: self.view!, attribute: .top, relatedBy: .equal, toItem: bv!, attribute: .top, multiplier: 1.0, constant: 5.0 + badgeInset.y )
         
         self.view!.addConstraints([rightConstraint, topConstraint])
         

@@ -47,14 +47,14 @@ open class TIPBadgeView: UIView {
     }
     
     func addLabelConstraints(){
-        topLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.top, relatedBy: NSLayoutRelation.equal, toItem: self.label!, attribute: NSLayoutAttribute.top, multiplier: 1.0, constant: 0)
+      topLabelConstraint = NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: self.label!, attribute: .top, multiplier: 1.0, constant: 0)
         
-        bottomLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.bottom, relatedBy: NSLayoutRelation.equal, toItem: self.label!, attribute: NSLayoutAttribute.bottom, multiplier: 1.0, constant: 0)
+      bottomLabelConstraint = NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .equal, toItem: self.label!, attribute: .bottom, multiplier: 1.0, constant: 0)
         
-        leftLabelConstraint = NSLayoutConstraint(item: self.label, attribute: NSLayoutAttribute.left, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.left, multiplier: 1.0, constant: 2.0)
+      leftLabelConstraint = NSLayoutConstraint(item: self.label, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 2.0)
         leftLabelConstraint!.priority = UILayoutPriority(rawValue: 1000.0)
         
-        rightLabelConstraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.right, relatedBy: NSLayoutRelation.equal, toItem: self.label, attribute: NSLayoutAttribute.right, multiplier: 1.0, constant: 2.0)
+      rightLabelConstraint = NSLayoutConstraint(item: self, attribute: .right, relatedBy: .equal, toItem: self.label, attribute: .right, multiplier: 1.0, constant: 2.0)
         rightLabelConstraint!.priority = UILayoutPriority(rawValue: 1000.0)
         
         self.addConstraints([topLabelConstraint!, bottomLabelConstraint!, leftLabelConstraint!, rightLabelConstraint!])
