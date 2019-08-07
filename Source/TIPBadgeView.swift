@@ -16,8 +16,8 @@ open class TIPBadgeView: UIView {
     open var leftLabelConstraint:NSLayoutConstraint?
     open var rightLabelConstraint:NSLayoutConstraint?
     
-    open let STANDARD_MARGIN : CGFloat = 2
-    open let LARGER_MARGIN : CGFloat = 3
+    public let STANDARD_MARGIN : CGFloat = 2
+    public let LARGER_MARGIN : CGFloat = 3
     
     public init(){
         super.init(frame: CGRect(x: 0, y: 0, width: 18, height: 18))

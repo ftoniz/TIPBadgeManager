@@ -10,7 +10,7 @@ import UIKit
 
 open class TIPBadgeManager {
     
-    open static let sharedInstance = TIPBadgeManager()
+    public static let sharedInstance = TIPBadgeManager()
     
     open var tipBadgeObjDict = [String : TIPBadgeObject]()
     
